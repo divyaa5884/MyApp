@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.divya.myapp.secondActivity">
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="47dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_create"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/button_create"
+        android:layout_marginTop="23dp"
+        android:text="@string/heading"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText_eid"
+        android:layout_alignBottom="@+id/editText_eid"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Email Id"
+        android:textColor="@android:color/black"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_toLeftOf="@+id/editText_name"
+        android:layout_toStartOf="@+id/editText_name"
+        android:fontFamily="sans-serif-condensed"
+        android:lineSpacingExtra="8sp"
+        android:text="Mobile Number"
+        android:textColor="@android:color/black"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Password"
+        android:textColor="@android:color/black"
+        android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:inputType="textCapWords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_name"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:ems="8" />
+
+    <EditText
+        android:id="@+id/editText_eid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText_mob"
+        android:layout_alignLeft="@+id/editText_uname"
+        android:layout_alignStart="@+id/editText_uname"
+        android:ems="8"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editText_mob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignLeft="@+id/editText_eid"
+        android:layout_alignStart="@+id/editText_eid"
+        android:ems="8"
+        android:fontFamily="serif"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editText_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignLeft="@+id/editText_mob"
+        android:layout_alignStart="@+id/editText_mob"
+        android:ems="8"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="@string/create" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_name"
+        android:layout_alignStart="@+id/textView_name"
+        android:layout_below="@+id/editText_name"
+        android:layout_marginTop="19dp"
+        android:text="Username"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText_uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText_name"
+        android:layout_marginRight="16dp"
+        android:ems="8"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>

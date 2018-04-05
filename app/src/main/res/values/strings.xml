@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="txt">Not yet a Registered User?</string>
+    <string name="acc">Have an account</string>
+    <string name="heading">Create your account</string>
+    <string name="create">Create My Account</string>
+</resources>
